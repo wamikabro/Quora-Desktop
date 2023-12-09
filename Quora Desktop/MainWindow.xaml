@@ -13,7 +13,7 @@
         </Grid.RowDefinitions>
 
         <!-- Top Navigation Bar -->
-        <StackPanel Grid.Row="0" Orientation="Horizontal">
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
             <!-- Quora Logo -->
             <!-- Example with Internet Link -->
             <Image Source="assets/quora_logo.png" Width="50" Height="20" VerticalAlignment="Center"/>
