@@ -23,6 +23,9 @@ namespace Quora_Desktop
         public MainWindow()
         {
             InitializeComponent();
+
+            // Maximize the window to the full screen
+            WindowState = WindowState.Maximized;
         }
     }
 }
