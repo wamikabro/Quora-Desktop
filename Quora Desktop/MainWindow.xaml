@@ -19,13 +19,14 @@
             <Image Source="assets/quora_logo.png" Width="50" Height="20" VerticalAlignment="Center"/>
 
             <!-- Navigation Buttons -->
-            
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                 <RadioButton Content="Home" Name="homeButton" />
                 <RadioButton Content="Following" Name="followingButton" />
                 <RadioButton Content="Answer" Name="answerButton" />
                 <RadioButton Content="Spaces" Name="spacesButton" />
                 <RadioButton Content="Notifications" Name="notificationsButton" />
-            
+            </StackPanel>
+
             <!-- Search Bar -->
             <TextBox Text="Search Quora" Width="200" Margin="10,0"/>
 
