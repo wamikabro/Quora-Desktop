@@ -16,7 +16,7 @@
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
             <!-- Quora Logo -->
             <!-- Example with Internet Link -->
-            <Image Source="assets/quora_logo.png" Width="50" Height="20" VerticalAlignment="Center"/>
+            <Image Source="assets/quora_logo.png" Width="101" Height="78" VerticalAlignment="Center"/>
 
             <!-- Navigation Buttons -->
             <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
