@@ -7,6 +7,42 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Top Navigation Bar -->
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <!-- Quora Logo -->
+            <!-- Example with Internet Link -->
+            <Image Source="assets/quora_logo.png" Width="50" Height="20" VerticalAlignment="Center"/>
+
+            <!-- Navigation Buttons -->
+            
+                <RadioButton Content="Home" Name="homeButton" />
+                <RadioButton Content="Following" Name="followingButton" />
+                <RadioButton Content="Answer" Name="answerButton" />
+                <RadioButton Content="Spaces" Name="spacesButton" />
+                <RadioButton Content="Notifications" Name="notificationsButton" />
+            
+            <!-- Search Bar -->
+            <TextBox Text="Search Quora" Width="200" Margin="10,0"/>
+
+            <!-- Try Quora+ Button -->
+            <Button Content="Try Quora+" Margin="10,0"/>
+
+            <!-- Profile Icon -->
+            <Image Source="Icons/profile_icon.png" Width="30" Height="30" Margin="10,0"/>
+
+            <!-- Language Icon -->
+            <Image Source="Icons/language_icon.png" Width="30" Height="30" Margin="10,0"/>
+
+            <!-- Ask Question Button -->
+            <Button Content="Ask Question" Margin="10,0"/>
+        </StackPanel>
+
+        <!-- Content Area -->
+        <ContentControl Grid.Row="1" Name="contentControl" />
     </Grid>
 </Window>
