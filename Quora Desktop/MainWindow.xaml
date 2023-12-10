@@ -20,11 +20,11 @@
 
             <!-- Navigation Buttons -->
             <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-                <RadioButton Content="Home" Name="homeButton" />
-                <RadioButton Content="Following" Name="followingButton" />
-                <RadioButton Content="Answer" Name="answerButton" />
-                <RadioButton Content="Spaces" Name="spacesButton" />
-                <RadioButton Content="Notifications" Name="notificationsButton" />
+                <RadioButton Content="Home" Name="homeButton" Style="{StaticResource NavigationRadioButtonStyle}" />
+                <RadioButton Content="Following" Name="followingButton" Style="{StaticResource NavigationRadioButtonStyle}"/>
+                <RadioButton Content="Answer" Name="answerButton" Style="{StaticResource NavigationRadioButtonStyle}"/>
+                <RadioButton Content="Spaces" Name="spacesButton" Style="{StaticResource NavigationRadioButtonStyle}"/>
+                <RadioButton Content="Notifications" Name="notificationsButton" Style="{StaticResource NavigationRadioButtonStyle}"/>
             </StackPanel>
 
             <!-- Search Bar -->
