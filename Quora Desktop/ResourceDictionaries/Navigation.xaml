@@ -10,17 +10,15 @@
             <Setter.Value>
                 <ControlTemplate TargetType="RadioButton">
                     <StackPanel Orientation="Horizontal" Margin="10,0,10,0" VerticalAlignment="Center" HorizontalAlignment="Center">
-                        <fa:ImageAwesome Icon="{Binding Tag, RelativeSource={RelativeSource TemplatedParent}}" VerticalAlignment="Center"/>
+                        <fa:ImageAwesome Icon="{Binding Tag, RelativeSource={RelativeSource TemplatedParent}}" x:Name="icon" VerticalAlignment="Center"/>
                     </StackPanel>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsChecked" Value="True">
-                            <Setter Property="TextBlock.TextDecorations" Value="Underline"/>
-                            <Setter Property="TextBlock.Foreground" Value="Red"/>
+                            <Setter Property="fa:ImageAwesome.Foreground" Value="#B92B27" TargetName="icon"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
     </Style>
-
 </ResourceDictionary>
