@@ -9,12 +9,15 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="RadioButton">
-                    <StackPanel Orientation="Horizontal" Margin="10,0,10,0" VerticalAlignment="Center" HorizontalAlignment="Center">
-                        <fa:ImageAwesome Height="20" Icon="{Binding Tag, RelativeSource={RelativeSource TemplatedParent}}" x:Name="icon" VerticalAlignment="Center"/>
-                    </StackPanel>
+                    <Border x:Name="border" BorderThickness="0,0,0,3" Padding="0,0,0,7" BorderBrush="Transparent">
+                        <StackPanel Orientation="Horizontal" Margin="10,10,10,0" VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <fa:ImageAwesome Height="20" Icon="{Binding Tag, RelativeSource={RelativeSource TemplatedParent}}" x:Name="icon" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsChecked" Value="True">
                             <Setter Property="fa:ImageAwesome.Foreground" Value="#B92B27" TargetName="icon"/>
+                            <Setter Property="BorderBrush" Value="#B92B27" TargetName="border"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
