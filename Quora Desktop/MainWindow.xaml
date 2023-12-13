@@ -19,7 +19,7 @@
             <Image Source="assets/quora_logo.png" Width="101" Height="78" VerticalAlignment="Center"/>
 
             <!-- Navigation Buttons -->
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+            <StackPanel Margin="10,0,10,0" Orientation="Horizontal" VerticalAlignment="Center">
                 <RadioButton Tag="Home" Name="homeButton" Style="{StaticResource NavigationRadioButtonStyle}" />
                 <RadioButton Tag="list" Name="followingButton" Style="{StaticResource NavigationRadioButtonStyle}"/>
                 <RadioButton Tag="globe" Name="answerButton" Style="{StaticResource NavigationRadioButtonStyle}"/>
