@@ -10,7 +10,7 @@
             <Setter.Value>
                 <ControlTemplate TargetType="RadioButton">
                     <StackPanel Orientation="Horizontal" Margin="10,0,10,0" VerticalAlignment="Center" HorizontalAlignment="Center">
-                        <fa:ImageAwesome Icon="{Binding Tag, RelativeSource={RelativeSource TemplatedParent}}" x:Name="icon" VerticalAlignment="Center"/>
+                        <fa:ImageAwesome Height="20" Icon="{Binding Tag, RelativeSource={RelativeSource TemplatedParent}}" x:Name="icon" VerticalAlignment="Center"/>
                     </StackPanel>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsChecked" Value="True">
