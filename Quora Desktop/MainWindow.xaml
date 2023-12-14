@@ -3,7 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Quora_Desktop"
+        xmlns:local="clr-namespace:Quora_Desktop" 
+        xmlns:fa="http://schemas.fontawesome.io/icons/"
         mc:Ignorable="d"
         Title="MainWindow">
     <Grid>
@@ -37,7 +38,7 @@
             <Image Source="Icons/profile_icon.png" Width="30" Height="30" Margin="10,0"/>
 
             <!-- Language Icon -->
-            <Image Source="Icons/language_icon.png" Width="30" Height="30" Margin="10,0"/>
+            <fa:ImageAwesome Style="{StaticResource LanguageIconStyle}" Icon="Globe" Margin="10,0"/>
 
             <!-- Ask Question Button -->
             <Button Content="Ask Question" Margin="10,0"/>
