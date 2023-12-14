@@ -23,7 +23,7 @@
             <StackPanel Margin="10,0,10,0" Orientation="Horizontal" VerticalAlignment="Center">
                 <RadioButton Tag="Home" Name="homeButton" Style="{StaticResource NavigationRadioButtonStyle}" />
                 <RadioButton Tag="list" Name="followingButton" Style="{StaticResource NavigationRadioButtonStyle}"/>
-                <RadioButton Tag="globe" Name="answerButton" Style="{StaticResource NavigationRadioButtonStyle}"/>
+                <RadioButton Tag="book" Name="answerButton" Style="{StaticResource NavigationRadioButtonStyle}"/>
                 <RadioButton Tag="group" Name="spacesButton" Style="{StaticResource NavigationRadioButtonStyle}"/>
                 <RadioButton Tag="Bell" Name="notificationsButton" Style="{StaticResource NavigationRadioButtonStyle}"/>
             </StackPanel>
