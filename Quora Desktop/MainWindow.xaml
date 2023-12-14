@@ -28,6 +28,8 @@
                 <RadioButton Tag="Bell" Name="notificationsButton" Style="{StaticResource NavigationRadioButtonStyle}"/>
             </StackPanel>
             
+            <StackPanel Margin="10,0,10,0" Orientation="Horizontal" VerticalAlignment="Center">
+
             <!-- Search Bar -->
             <TextBox Text="Search Quora" Width="200" Margin="10,0"/>
 
@@ -43,6 +45,7 @@
 
                 <!-- Ask Question Button -->
                 <Button Content="Ask Question" Margin="10,0"/>
+            </StackPanel>
         </StackPanel>
 
         <!-- Content Area -->
