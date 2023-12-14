@@ -31,7 +31,7 @@
             <StackPanel Margin="10,0,10,0" Orientation="Horizontal" VerticalAlignment="Center">
 
             <!-- Search Bar -->
-            <TextBox Text="Search Quora" Width="200" Margin="10,0"/>
+            <TextBox Text="Search Quora" Style="{StaticResource SearchBarStyle}" Margin="10,0"/>
 
             <!-- Try Quora+ Button -->
             <Button Content="Try Quora+" Margin="10,0"/>
