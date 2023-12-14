@@ -27,7 +27,7 @@
                 <RadioButton Tag="group" Name="spacesButton" Style="{StaticResource NavigationRadioButtonStyle}"/>
                 <RadioButton Tag="Bell" Name="notificationsButton" Style="{StaticResource NavigationRadioButtonStyle}"/>
             </StackPanel>
-
+            
             <!-- Search Bar -->
             <TextBox Text="Search Quora" Width="200" Margin="10,0"/>
 
@@ -37,11 +37,12 @@
             <!-- Profile Icon -->
             <Image Source="Icons/profile_icon.png" Width="30" Height="30" Margin="10,0"/>
 
-            <!-- Language Icon -->
-            <fa:ImageAwesome Style="{StaticResource LanguageIconStyle}" Icon="Globe" Margin="10,0"/>
+                <!-- Language Icon -->
+                <RadioButton Tag="Globe" Name="globeButton" Style="{StaticResource LanguageIconStyle}" />
 
-            <!-- Ask Question Button -->
-            <Button Content="Ask Question" Margin="10,0"/>
+
+                <!-- Ask Question Button -->
+                <Button Content="Ask Question" Margin="10,0"/>
         </StackPanel>
 
         <!-- Content Area -->

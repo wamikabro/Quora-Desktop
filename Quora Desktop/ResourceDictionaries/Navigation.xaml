@@ -19,12 +19,35 @@
                             <Setter Property="fa:ImageAwesome.Foreground" Value="#B92B27" TargetName="icon"/>
                             <Setter Property="BorderBrush" Value="#B92B27" TargetName="border"/>
                         </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#f5f5f5" TargetName="border"/>
+                        </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
     </Style>
-    <Style x:Key="LanguageIconStyle" TargetType="fa:ImageAwesome">
-        <Setter Property="Height" Value="20"/>
+    <Style x:Key="LanguageIconStyle" TargetType="RadioButton">
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="Padding" Value="5"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RadioButton">
+                    <Border x:Name="border" BorderThickness="0,0,0,3" Padding="0,0,0,7" BorderBrush="Transparent">
+                        <StackPanel Orientation="Horizontal" Margin="10,10,10,0" VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <fa:ImageAwesome Height="20" Icon="{Binding Tag, RelativeSource={RelativeSource TemplatedParent}}" x:Name="icon" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#f5f5f5" TargetName="border"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
     </Style>
+    
 </ResourceDictionary>
