@@ -26,6 +26,29 @@ namespace Quora_Desktop
 
             // Maximize the window to the full screen
             WindowState = WindowState.Maximized;
+
+            searchTextBox.GotFocus += SearchTextBox_GotFocus;
+            searchTextBox.LostFocus += SearchTextBox_LostFocus;
+        }
+
+        private void SearchTextBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            TextBox textBox = (TextBox)sender;
+            if (textBox.Text == "Search Quora")
+            {
+                textBox.Text = "";
+                textBox.Foreground = System.Windows.Media.Brushes.Black;
+            }
+        }
+
+        private void SearchTextBox_LostFocus(object sender, RoutedEventArgs e)
+        {
+            TextBox textBox = (TextBox)sender;
+            if (string.IsNullOrWhiteSpace(textBox.Text))
+            {
+                textBox.Text = "Search Quora";
+                textBox.Foreground = System.Windows.Media.Brushes.Gray;
+            }
         }
     }
 }

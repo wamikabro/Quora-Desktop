@@ -15,8 +15,8 @@
 
         <!-- Top Navigation Bar -->
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
+
             <!-- Quora Logo -->
-            <!-- Example with Internet Link -->
             <Image Source="assets/quora_logo.png" Width="101" Height="78" VerticalAlignment="Center"/>
 
             <!-- Navigation Buttons -->
@@ -30,18 +30,18 @@
             
             <StackPanel Margin="10,0,10,0" Orientation="Horizontal" VerticalAlignment="Center">
 
-            <!-- Search Bar -->
-            <TextBox Text="Search Quora" Style="{StaticResource SearchBarStyle}" Margin="10,0"/>
+                <!-- Search Bar -->
+                <TextBox Name="searchTextBox" Style="{StaticResource SearchBarStyle}" Margin="10,0"
+                         GotFocus="SearchTextBox_GotFocus" LostFocus="SearchTextBox_LostFocus"/>
 
-            <!-- Try Quora+ Button -->
-            <Button Content="Try Quora+" Margin="10,0"/>
+                <!-- Try Quora+ Button -->
+                <Button Content="Try Quora+" Margin="10,0"/>
 
-            <!-- Profile Icon -->
-            <Image Width="30" Height="30" Margin="10,0"/>
+                <!-- Profile Icon -->
+                <Image Width="30" Height="30" Margin="10,0"/>
 
                 <!-- Language Icon -->
                 <RadioButton Tag="Globe" Name="globeButton" Style="{StaticResource LanguageIconStyle}" />
-
 
                 <!-- Ask Question Button -->
                 <Button Content="Ask Question" Margin="10,0"/>
