@@ -87,7 +87,7 @@
         <Setter Property="Width" Value="100"/>
         <Setter Property="Height" Value="40"/>
         
-        <!-- Optional: Change cursor on hover -->
+        
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Button">
@@ -98,5 +98,22 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
+    </Style>
+    <Style x:Key="AddQuestionButtonStyle" TargetType="Button">
+        <Setter Property="Background" Value="#B92B27"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Width" Value="150"/>
+        <Setter Property="Height" Value="30"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}" CornerRadius="15">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Content" Value="Add Question"/>
+        <Setter Property="FontWeight" Value="Bold"/>
     </Style>
 </ResourceDictionary>

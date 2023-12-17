@@ -44,7 +44,7 @@
                 <RadioButton Tag="Globe" Name="globeButton" Style="{StaticResource LanguageIconStyle}" />
 
                 <!-- Ask Question Button -->
-                <Button Content="Ask Question" Margin="10,0"/>
+                <Button Style="{StaticResource AddQuestionButtonStyle}" Margin="10,0"/>
             </StackPanel>
         </StackPanel>
 
