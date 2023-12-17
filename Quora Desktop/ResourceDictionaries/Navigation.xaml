@@ -64,4 +64,32 @@
             </Trigger>
         </Style.Triggers>
     </Style>
+    <Style x:Key="TryQuoraButtonStyle" TargetType="Button">
+        <Setter Property="Background" Value="White"/>
+        <!-- Set your desired background color -->
+        <Setter Property="Foreground" Value="Black"/>
+        <!-- Set your desired text color -->
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="Padding" Value="10"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        
+        <Setter Property="Margin" Value="10"/>
+        <Setter Property="Cursor" Value="Hand"/>
+
+        <Setter Property="Width" Value="100"/>
+        <Setter Property="Height" Value="40"/>
+        
+        <!-- Optional: Change cursor on hover -->
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}" BorderBrush="Gray" 
+                            BorderThickness="1" CornerRadius="20">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 </ResourceDictionary>

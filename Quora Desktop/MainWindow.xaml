@@ -35,7 +35,7 @@
                          GotFocus="SearchTextBox_GotFocus" LostFocus="SearchTextBox_LostFocus"/>
 
                 <!-- Try Quora+ Button -->
-                <Button Content="Try Quora+" Margin="10,0"/>
+                <Button Name="tryQuoraButton" Style="{StaticResource TryQuoraButtonStyle}" Content="Try Quora+" Margin="10,0"/>
 
                 <!-- Profile Icon -->
                 <Image Width="30" Height="30" Margin="10,0"/>
