@@ -105,5 +105,8 @@
   <ItemGroup>
     <Resource Include="assets\quora_logo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\profile_icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
