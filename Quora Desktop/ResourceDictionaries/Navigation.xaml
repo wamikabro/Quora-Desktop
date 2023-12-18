@@ -113,7 +113,47 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
-        <Setter Property="Content" Value="Add Question"/>
         <Setter Property="FontWeight" Value="Bold"/>
     </Style>
+
+    <!-- Style for the left sub-button -->
+    <Style x:Key="LeftButtonStyle" TargetType="Button">
+        <Setter Property="Background" Value="#B92B27"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Width" Value="100"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="Height" Value="30"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}" CornerRadius="15">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="FontWeight" Value="Bold"/>
+    </Style>
+
+    <!-- Style for the right sub-button with arrow -->
+    <Style x:Key="RightButtonStyle" TargetType="Button">
+        <Setter Property="Background" Value="#B92B27"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Width" Value="30"/>
+        <Setter Property="Margin" Value="110,0,0,0"/>
+        <Setter Property="HorizontalAlignment" Value="Right"/>
+        <!-- Adjust the width as needed -->
+        <Setter Property="Height" Value="30"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}" CornerRadius="0,15,15,0">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="FontWeight" Value="Bold"/>
+    </Style>
+
 </ResourceDictionary>

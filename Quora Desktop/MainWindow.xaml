@@ -44,7 +44,21 @@
                 <RadioButton Tag="Globe" Name="globeButton" Style="{StaticResource LanguageIconStyle}" />
 
                 <!-- Ask Question Button -->
-                <Button Style="{StaticResource AddQuestionButtonStyle}" Margin="10,0"/>
+                <Button Style="{StaticResource AddQuestionButtonStyle}">
+                    <Grid>
+                        <!-- Left Sub-Button -->
+                        <Button Content="Add Question" Style="{StaticResource LeftButtonStyle}"/>
+
+                        <!-- Right Sub-Button with Arrow -->
+                        <Button Style="{StaticResource RightButtonStyle}">
+                            <Grid>
+                                <!-- Arrow or any other content -->
+                                <TextBlock Text="▶" VerticalAlignment="Center"/>
+                            </Grid>
+                        </Button>
+                    </Grid>
+                </Button>
+
             </StackPanel>
         </StackPanel>
 
