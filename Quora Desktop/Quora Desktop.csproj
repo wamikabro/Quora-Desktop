@@ -108,5 +108,8 @@
   <ItemGroup>
     <Resource Include="assets\profile_icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\arrow_down_icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

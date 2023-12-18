@@ -53,7 +53,7 @@
                         <Button Style="{StaticResource RightButtonStyle}">
                             <Grid>
                                 <!-- Arrow or any other content -->
-                                <TextBlock Text="▶" VerticalAlignment="Center"/>
+                                 <Image Source="assets/arrow_down_icon.png"/>
                             </Grid>
                         </Button>
                     </Grid>
