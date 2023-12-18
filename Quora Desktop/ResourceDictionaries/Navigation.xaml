@@ -120,19 +120,24 @@
     <Style x:Key="LeftButtonStyle" TargetType="Button">
         <Setter Property="Background" Value="#B92B27"/>
         <Setter Property="Foreground" Value="White"/>
-        <Setter Property="Width" Value="100"/>
+        <Setter Property="Width" Value="120"/>
         <Setter Property="HorizontalAlignment" Value="Left"/>
         <Setter Property="Height" Value="30"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Button">
-                    <Border Background="{TemplateBinding Background}" CornerRadius="15">
+                    <Border Background="{TemplateBinding Background}" CornerRadius="15,0,0,15">
                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Border>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
         <Setter Property="FontWeight" Value="Bold"/>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="#902422"/>
+            </Trigger>
+        </Style.Triggers>
     </Style>
 
     <!-- Style for the right sub-button with arrow -->
@@ -140,7 +145,7 @@
         <Setter Property="Background" Value="#B92B27"/>
         <Setter Property="Foreground" Value="White"/>
         <Setter Property="Width" Value="30"/>
-        <Setter Property="Margin" Value="110,0,0,0"/>
+        <Setter Property="Margin" Value="120,0,0,0"/>
         <Setter Property="HorizontalAlignment" Value="Right"/>
         <!-- Adjust the width as needed -->
         <Setter Property="Height" Value="30"/>
@@ -154,6 +159,11 @@
             </Setter.Value>
         </Setter>
         <Setter Property="FontWeight" Value="Bold"/>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="#902422"/>
+            </Trigger>
+        </Style.Triggers>
     </Style>
 
 </ResourceDictionary>
