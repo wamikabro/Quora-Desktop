@@ -11,7 +11,7 @@
                 <ControlTemplate TargetType="RadioButton">
                     <Border x:Name="border" BorderThickness="0,0,0,3" Padding="0,0,0,7" BorderBrush="Transparent">
                         <StackPanel Orientation="Horizontal" Margin="10,10,10,0" VerticalAlignment="Center" HorizontalAlignment="Center">
-                            <fa:ImageAwesome Height="20" Icon="{Binding Tag, RelativeSource={RelativeSource TemplatedParent}}" x:Name="icon" VerticalAlignment="Center"/>
+                            <fa:ImageAwesome Foreground="Gray" Height="20" Icon="{Binding Tag, RelativeSource={RelativeSource TemplatedParent}}" x:Name="icon" VerticalAlignment="Center"/>
                         </StackPanel>
                     </Border>
                     <ControlTemplate.Triggers>
@@ -23,6 +23,51 @@
                             <Setter Property="Background" Value="#f5f5f5" TargetName="border"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="SearchBarStyle" TargetType="TextBox">
+        <Setter Property="Width" Value="350"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Style.Triggers>
+            <Trigger Property="IsFocused" Value="True">
+                <Setter Property="Foreground" Value="Black"/>
+                <Setter Property="Text" Value=""/>
+            </Trigger>
+            <Trigger Property="IsFocused" Value="False">
+                <Setter Property="Foreground" Value="Gray"/>
+                <Setter Property="Text" Value="Search Quora"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    
+    <Style x:Key="TryQuoraButtonStyle" TargetType="Button">
+        <Setter Property="Background" Value="White"/>
+        <!-- Set your desired background color -->
+        <Setter Property="Foreground" Value="Black"/>
+        <!-- Set your desired text color -->
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="Padding" Value="10"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        
+        <Setter Property="Margin" Value="10"/>
+        <Setter Property="Cursor" Value="Hand"/>
+
+        <Setter Property="Width" Value="100"/>
+        <Setter Property="Height" Value="40"/>
+        
+        
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}" BorderBrush="DarkGray" 
+                            BorderThickness="1" CornerRadius="20">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
@@ -55,50 +100,7 @@
             </Setter.Value>
         </Setter>
     </Style>
-    
-    <Style x:Key="SearchBarStyle" TargetType="TextBox">
-        <Setter Property="Width" Value="350"/>
-        <Setter Property="FontSize" Value="20"/>
-        <Setter Property="VerticalContentAlignment" Value="Center"/>
-        <Style.Triggers>
-            <Trigger Property="IsFocused" Value="True">
-                <Setter Property="Foreground" Value="Black"/>
-                <Setter Property="Text" Value=""/>
-            </Trigger>
-            <Trigger Property="IsFocused" Value="False">
-                <Setter Property="Foreground" Value="Gray"/>
-                <Setter Property="Text" Value="Search Quora"/>
-            </Trigger>
-        </Style.Triggers>
-    </Style>
-    <Style x:Key="TryQuoraButtonStyle" TargetType="Button">
-        <Setter Property="Background" Value="White"/>
-        <!-- Set your desired background color -->
-        <Setter Property="Foreground" Value="Black"/>
-        <!-- Set your desired text color -->
-        <Setter Property="FontSize" Value="14"/>
-        <Setter Property="FontWeight" Value="Bold"/>
-        <Setter Property="Padding" Value="10"/>
-        <Setter Property="BorderThickness" Value="1"/>
-        
-        <Setter Property="Margin" Value="10"/>
-        <Setter Property="Cursor" Value="Hand"/>
 
-        <Setter Property="Width" Value="100"/>
-        <Setter Property="Height" Value="40"/>
-        
-        
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="Button">
-                    <Border Background="{TemplateBinding Background}" BorderBrush="Gray" 
-                            BorderThickness="1" CornerRadius="20">
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-    </Style>
     <Style x:Key="AddQuestionButtonStyle" TargetType="Button">
         <Setter Property="Background" Value="#B92B27"/>
         <Setter Property="Foreground" Value="White"/>

@@ -53,7 +53,7 @@
                         <Button Style="{StaticResource RightButtonStyle}">
                             <Grid>
                                 <!-- Arrow or any other content -->
-                                 <Image Source="assets/arrow_down_icon.png"/>
+                                 <Image Source="assets/arrow_down_icon.png" Width="15" Height="15"/>
                             </Grid>
                         </Button>
                     </Grid>
