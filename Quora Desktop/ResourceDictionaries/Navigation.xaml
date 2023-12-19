@@ -47,10 +47,9 @@
     <Style x:Key="TryQuoraButtonStyle" TargetType="Button">
         <Setter Property="Background" Value="White"/>
         <!-- Set your desired background color -->
-        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="Foreground" Value="Gray"/>
         <!-- Set your desired text color -->
         <Setter Property="FontSize" Value="14"/>
-        <Setter Property="FontWeight" Value="Bold"/>
         <Setter Property="Padding" Value="10"/>
         <Setter Property="BorderThickness" Value="1"/>
         
@@ -58,14 +57,14 @@
         <Setter Property="Cursor" Value="Hand"/>
 
         <Setter Property="Width" Value="100"/>
-        <Setter Property="Height" Value="40"/>
+        <Setter Property="Height" Value="30"/>
         
         
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Button">
                     <Border Background="{TemplateBinding Background}" BorderBrush="DarkGray" 
-                            BorderThickness="1" CornerRadius="20">
+                            BorderThickness="1" CornerRadius="15">
                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Border>
                 </ControlTemplate>
