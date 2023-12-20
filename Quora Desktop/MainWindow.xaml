@@ -9,15 +9,16 @@
         Title="MainWindow">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="68.501"/>
+            <RowDefinition Height="9.499"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
         <!-- Top Navigation Bar -->
-        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center" Grid.RowSpan="2">
 
             <!-- Quora Logo -->
-            <Image Source="assets/quora_logo.png" Width="101" Height="78" VerticalAlignment="Center"/>
+            <Image Source="assets/quora_logo.png" Style="{StaticResource QuoraLogoStyle}"/>
 
             <!-- Navigation Buttons -->
             <StackPanel Margin="10,0,10,0" Orientation="Horizontal" VerticalAlignment="Center">
@@ -27,7 +28,7 @@
                 <RadioButton Tag="group" Name="spacesButton" Style="{StaticResource NavigationRadioButtonStyle}"/>
                 <RadioButton Tag="Bell" Name="notificationsButton" Style="{StaticResource NavigationRadioButtonStyle}"/>
             </StackPanel>
-            
+
             <StackPanel Margin="10,0,10,0" Orientation="Horizontal" VerticalAlignment="Center">
 
                 <!-- Search Bar -->
@@ -53,7 +54,7 @@
                         <Button Style="{StaticResource RightButtonStyle}">
                             <Grid>
                                 <!-- Arrow or any other content -->
-                                 <Image Source="assets/arrow_down_icon.png" Width="15" Height="15"/>
+                                <Image Source="assets/arrow_down_icon.png" Width="15" Height="15"/>
                             </Grid>
                         </Button>
                     </Grid>
@@ -63,6 +64,6 @@
         </StackPanel>
 
         <!-- Content Area -->
-        <ContentControl Grid.Row="1" Name="contentControl" />
+        <ContentControl Grid.Row="2" Name="contentControl" />
     </Grid>
 </Window>
