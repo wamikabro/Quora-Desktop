@@ -6,6 +6,7 @@
         <Setter Property="Height" Value="78"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
     </Style>
+    
     <Style x:Key="NavigationRadioButtonStyle" TargetType="RadioButton">
         <Setter Property="Foreground" Value="Black"/>
         <Setter Property="FontSize" Value="14"/>
@@ -33,11 +34,21 @@
         </Setter>
     </Style>
 
-    <Style x:Key="SearchBarStyle" TargetType="TextBox">
+    <Style x:Key="SearchBarBorderSectionStyle" TargetType="Border">
+        <Setter Property="CornerRadius" Value="3"/>
         <Setter Property="Width" Value="350"/>
         <Setter Property="Height" Value="40"/>
+        <Setter Property="BorderBrush" Value="Gray"/>
+        <Setter Property="BorderThickness" Value="1"/>
+    </Style>
+
+    <Style x:Key="SearchBarTextSectionStyle" TargetType="TextBox">
+        <Setter Property="Width" Value="310"/>
+        <Setter Property="Height" Value="30"/>
         <Setter Property="FontSize" Value="15"/>
+        <Setter Property="Margin" Value="35,0,0,0"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
         <Style.Triggers>
             <Trigger Property="IsFocused" Value="True">
                 <Setter Property="Foreground" Value="Black"/>
@@ -48,13 +59,16 @@
                 <Setter Property="Text" Value="Search Quora"/>
             </Trigger>
         </Style.Triggers>
-        <Style.Resources>
-            <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="3"/>
-            </Style>
-        </Style.Resources>
     </Style>
-   
+
+    <Style x:Key="SearchBarIconSectionStyle" TargetType="fa:ImageAwesome">
+        <Setter Property="Icon" Value="Search"/>
+        <Setter Property="Width" Value="15"/>
+        <Setter Property="Height" Value="15"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="Margin" Value="10,3,0,0"/>
+        <Setter Property="Foreground" Value="Gray"/>
+    </Style>
 
     <Style x:Key="TryQuoraButtonStyle" TargetType="Button">
         <Setter Property="Background" Value="White"/>

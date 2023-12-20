@@ -32,8 +32,22 @@
             <StackPanel Margin="10,0,10,0" Orientation="Horizontal" VerticalAlignment="Center">
 
                 <!-- Search Bar -->
-                <TextBox Name="searchTextBox" Style="{StaticResource SearchBarStyle}" Margin="10,0"
-                         GotFocus="SearchTextBox_GotFocus" LostFocus="SearchTextBox_LostFocus"/>
+                <TextBox Name="searchTextBox" Margin="10,0"
+                         GotFocus="SearchTextBox_GotFocus" LostFocus="SearchTextBox_LostFocus">
+                    <TextBox.Template>
+                        <ControlTemplate TargetType="TextBox">
+                            <Grid>
+                                <!-- Border section -->
+                                <Border Style="{StaticResource SearchBarBorderSectionStyle}">
+                                    <!-- First section -->
+                                    <TextBox Style="{StaticResource SearchBarTextSectionStyle}" Grid.Column="0"/>
+                                </Border>
+                                <!-- Icon Section -->
+                                <fa:ImageAwesome Style="{StaticResource SearchBarIconSectionStyle}" Grid.Column="1"/>
+                            </Grid>
+                        </ControlTemplate>
+                    </TextBox.Template>
+                </TextBox>
 
                 <!-- Try Quora+ Button -->
                 <Button Name="tryQuoraButton" Style="{StaticResource TryQuoraButtonStyle}" Content="Try Quora+" Margin="10,0"/>
