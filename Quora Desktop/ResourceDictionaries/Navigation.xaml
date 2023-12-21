@@ -4,6 +4,7 @@
     <Style x:Key="QuoraLogoStyle" TargetType="Image">
         <Setter Property="Width" Value="101"/>
         <Setter Property="Height" Value="78"/>
+        <Setter Property="Focusable" Value="False"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
     </Style>
     
@@ -12,6 +13,7 @@
         <Setter Property="FontSize" Value="14"/>
         <Setter Property="FontWeight" Value="Bold"/>
         <Setter Property="Padding" Value="5"/>
+        <Setter Property="Focusable" Value="False"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="RadioButton">
@@ -64,16 +66,13 @@
 
     <Style x:Key="TryQuoraButtonStyle" TargetType="Button">
         <Setter Property="Background" Value="White"/>
-        <!-- Set your desired background color -->
         <Setter Property="Foreground" Value="Gray"/>
-        <!-- Set your desired text color -->
         <Setter Property="FontSize" Value="14"/>
         <Setter Property="Padding" Value="10"/>
         <Setter Property="BorderThickness" Value="1"/>
-        
+        <Setter Property="Focusable" Value="False"/>
         <Setter Property="Margin" Value="10"/>
         <Setter Property="Cursor" Value="Hand"/>
-
         <Setter Property="Width" Value="100"/>
         <Setter Property="Height" Value="30"/>
         
@@ -93,12 +92,14 @@
     <Style x:Key="ProfileIconStyle" TargetType="Image">
         <Setter Property="Width" Value="25"/>
         <Setter Property="Height" Value="25"/>
+        <Setter Property="Focusable" Value="False"/>
     </Style>
 
     <Style x:Key="LanguageIconStyle" TargetType="RadioButton">
         <Setter Property="FontSize" Value="14"/>
         <Setter Property="FontWeight" Value="Bold"/>
         <Setter Property="Padding" Value="5"/>
+        <Setter Property="Focusable" Value="False"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="RadioButton">
@@ -122,6 +123,7 @@
         <Setter Property="Foreground" Value="White"/>
         <Setter Property="Width" Value="150"/>
         <Setter Property="Height" Value="30"/>
+        <Setter Property="Focusable" Value="False"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Button">
@@ -141,6 +143,7 @@
         <Setter Property="Width" Value="120"/>
         <Setter Property="HorizontalAlignment" Value="Left"/>
         <Setter Property="Height" Value="30"/>
+        <Setter Property="Focusable" Value="False"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Button">
@@ -164,6 +167,7 @@
         <Setter Property="Foreground" Value="White"/>
         <Setter Property="Width" Value="45"/>
         <Setter Property="Margin" Value="105,0,0,0"/>
+        <Setter Property="Focusable" Value="False"/>
         <Setter Property="HorizontalAlignment" Value="Right"/>
         <!-- Adjust the width as needed -->
         <Setter Property="Height" Value="30"/>
