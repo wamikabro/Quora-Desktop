@@ -10,7 +10,6 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="68.501"/>
-            <RowDefinition Height="9.499"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -18,7 +17,7 @@
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center" Grid.RowSpan="2">
 
             <!-- Quora Logo -->
-            <Image Source="assets/quora_logo.png" Style="{StaticResource QuoraLogoStyle}"/>
+            <Image Source="../assets/quora_logo.png" Style="{StaticResource QuoraLogoStyle}"/>
 
             <!-- Navigation Buttons -->
             <StackPanel Margin="10,0,10,0" Orientation="Horizontal" VerticalAlignment="Center">
@@ -56,7 +55,7 @@
                 <Button Name="tryQuoraButton" Style="{StaticResource TryQuoraButtonStyle}" Content="Try Quora+" Margin="10,0"/>
 
                 <!-- Profile Icon -->
-                <Image Style="{StaticResource ProfileIconStyle}" Source="assets/profile_icon.png" VerticalAlignment="Center"/>
+                <Image Style="{StaticResource ProfileIconStyle}" Source="../assets/profile_icon.png" VerticalAlignment="Center"/>
 
                 <!-- Language Icon -->
                 <RadioButton Tag="Globe" Name="globeButton" Style="{StaticResource LanguageIconStyle}" />
@@ -71,7 +70,7 @@
                         <Button Style="{StaticResource RightButtonStyle}">
                             <Grid>
                                 <!-- Arrow or any other content -->
-                                <Image Source="assets/arrow_down_icon.png" Width="15" Height="15"/>
+                                <Image Source="../assets/arrow_down_icon.png" Width="15" Height="15"/>
                             </Grid>
                         </Button>
                     </Grid>
@@ -81,6 +80,6 @@
         </StackPanel>
 
         <!-- Content Area -->
-        <ContentControl Grid.Row="2" Name="contentControl" />
+        <ContentControl Grid.Row="1" Name="contentControl" />
     </Grid>
 </Window>
