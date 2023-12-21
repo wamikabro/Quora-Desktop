@@ -40,7 +40,7 @@
                                 <!-- Border Section -->
                                 <Border Style="{StaticResource SearchBarBorderSectionStyle}">
                                     <!-- Search Section -->
-                                    <TextBox Style="{StaticResource SearchBarTextSectionStyle}" 
+                                    <TextBox x:Name="SearchBarTextSection" Style="{StaticResource SearchBarTextSectionStyle}" 
                                              Grid.Column="0"
                                              GotFocus="SearchTextBox_GotFocus"
                                              LostFocus="SearchTextBox_LostFocus"/>
