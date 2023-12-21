@@ -37,10 +37,13 @@
                     <TextBox.Template>
                         <ControlTemplate TargetType="TextBox">
                             <Grid>
-                                <!-- Border section -->
+                                <!-- Border Section -->
                                 <Border Style="{StaticResource SearchBarBorderSectionStyle}">
-                                    <!-- First section -->
-                                    <TextBox Style="{StaticResource SearchBarTextSectionStyle}" Grid.Column="0"/>
+                                    <!-- Search Section -->
+                                    <TextBox Style="{StaticResource SearchBarTextSectionStyle}" 
+                                             Grid.Column="0"
+                                             GotFocus="SearchTextBox_GotFocus"
+                                             LostFocus="SearchTextBox_LostFocus"/>
                                 </Border>
                                 <!-- Icon Section -->
                                 <fa:ImageAwesome Style="{StaticResource SearchBarIconSectionStyle}" Grid.Column="1"/>

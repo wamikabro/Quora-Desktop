@@ -37,8 +37,8 @@ namespace Quora_Desktop
             if (textBox.Text == "Search Quora")
             {
                 textBox.Text = "";
-                textBox.Foreground = System.Windows.Media.Brushes.Black;
             }
+            textBox.Foreground = System.Windows.Media.Brushes.Black;
         }
 
         private void SearchTextBox_LostFocus(object sender, RoutedEventArgs e)
@@ -47,8 +47,8 @@ namespace Quora_Desktop
             if (string.IsNullOrWhiteSpace(textBox.Text))
             {
                 textBox.Text = "Search Quora";
-                textBox.Foreground = System.Windows.Media.Brushes.Gray;
             }
+            textBox.Foreground = System.Windows.Media.Brushes.Gray;
         }
     }
 }
