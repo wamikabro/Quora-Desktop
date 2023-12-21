@@ -9,12 +9,12 @@
         Title="MainWindow">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="68.501"/>
+            <RowDefinition Height="65"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
         <!-- Top Navigation Bar -->
-        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center" Grid.RowSpan="2">
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.RowSpan="2">
 
             <!-- Quora Logo -->
             <Image Source="../assets/quora_logo.png" Style="{StaticResource QuoraLogoStyle}"/>
@@ -28,7 +28,7 @@
                 <RadioButton Tag="Bell" Name="notificationsButton" Style="{StaticResource NavigationRadioButtonStyle}"/>
             </StackPanel>
 
-            <StackPanel Margin="10,0,10,0" Orientation="Horizontal" VerticalAlignment="Center">
+            <StackPanel Margin="0,0,10,0" Orientation="Horizontal" VerticalAlignment="Center">
 
                 <!-- Search Bar -->
                 <TextBox Name="searchTextBox" Margin="10,0"
@@ -80,6 +80,6 @@
         </StackPanel>
 
         <!-- Content Area -->
-        <ContentControl Grid.Row="1" Name="contentControl" />
+        <ContentControl Grid.Row="1"/>
     </Grid>
 </Window>
