@@ -78,8 +78,8 @@
 
             </StackPanel>
         </StackPanel>
-
-        <!-- Content Area -->
-        <ContentControl Grid.Row="1"/>
+        <Grid Grid.Row="1" Style="{StaticResource ContentGridStyle}" >
+            
+        </Grid>
     </Grid>
 </Window>
