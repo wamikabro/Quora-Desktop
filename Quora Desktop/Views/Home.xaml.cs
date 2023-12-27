@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Quora_Desktop.Views.UserControls
+namespace Quora_Desktop.Views
 {
     /// <summary>
-    /// Interaction logic for HomeUC.xaml
+    /// Interaction logic for Home.xaml
     /// </summary>
-    public partial class HomeUC : UserControl
+    public partial class Home : UserControl
     {
-        public HomeUC()
+        public Home()
         {
             InitializeComponent();
         }
