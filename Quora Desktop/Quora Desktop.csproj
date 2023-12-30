@@ -58,6 +58,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Utilities\Btn.cs" />
     <Compile Include="ViewModel\NotificationsVM.cs" />
     <Compile Include="Views\Notifications.xaml.cs">
       <DependentUpon>Notifications.xaml</DependentUpon>
