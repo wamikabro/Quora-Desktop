@@ -65,7 +65,7 @@
     <Compile Include="Views\Spaces.xaml.cs">
       <DependentUpon>Spaces.xaml</DependentUpon>
     </Compile>
-    <Page Include="ResourceDictionaries\ContentGrid.xaml">
+    <Page Include="Styles\ContentGrid.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -108,7 +108,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="ResourceDictionaries\Navigation.xaml">
+    <Page Include="Styles\Navigation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

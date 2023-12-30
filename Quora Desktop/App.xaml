@@ -6,8 +6,8 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="ResourceDictionaries/Navigation.xaml"/>
-                <ResourceDictionary Source="ResourceDictionaries/ContentGrid.xaml"/>
+                <ResourceDictionary Source="Styles/Navigation.xaml"/>
+                <ResourceDictionary Source="Styles/ContentGrid.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
