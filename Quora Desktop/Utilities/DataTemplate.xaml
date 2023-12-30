@@ -1,4 +1,26 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:vm="clr-namespace:Quora_Desktop.ViewModel"
+                    xmlns:view="clr-namespace:Quora_Desktop.Views">
     
+    <DataTemplate DataType="x:Type vm:HomeVM">
+        <view:Home/>
+    </DataTemplate>
+
+    <DataTemplate DataType="x:Type vm:AnswerVM">
+        <view:Answer/>
+    </DataTemplate>
+    
+    <DataTemplate DataType="x:Type vm:FollowingVM">
+        <view:Following/>
+    </DataTemplate>
+    
+    <DataTemplate DataType="x:Type vm:NotificationsVM">
+        <view:Notifications/>
+    </DataTemplate>
+    
+    <DataTemplate DataType="x:Type vm:SpacesVM">
+        <view:Spaces/>
+    </DataTemplate>
+
 </ResourceDictionary>
