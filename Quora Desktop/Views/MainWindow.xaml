@@ -55,7 +55,9 @@
                 <Button Name="tryQuoraButton" Style="{StaticResource TryQuoraButtonStyle}" Content="Try Quora+" Margin="10,0"/>
 
                 <!-- Profile Icon -->
-                <Image Style="{StaticResource ProfileIconStyle}" Source="../assets/profile_icon.png" VerticalAlignment="Center"/>
+                <Border Style="{StaticResource ProfileIconBorderStyle}">
+                    <Image Style="{StaticResource ProfileIconStyle}" Source="../assets/profile_icon.png" VerticalAlignment="Center"/>
+                </Border>
 
                 <!-- Language Icon -->
                 <RadioButton Tag="Globe" Name="globeButton" Style="{StaticResource LanguageIconStyle}" />

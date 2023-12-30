@@ -37,5 +37,14 @@
         <Setter Property="Height" Value="25"/>
         <Setter Property="Cursor" Value="Hand"/>
     </Style>
+    <Style x:Key="ProfileIconBorderStyle" TargetType="Border">
+        <Setter Property="Width" Value="40"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="#f5f5f5"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
 
 </ResourceDictionary>
