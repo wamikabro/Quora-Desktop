@@ -59,7 +59,7 @@
         </Style.Triggers>
     </Style>
     
-    <Style x:Key="LanguageIconStyle" TargetType="RadioButton">
+    <Style x:Key="LanguageRadioButtonStyle" TargetType="RadioButton">
         <Setter Property="FontSize" Value="14"/>
         <Setter Property="FontWeight" Value="Bold"/>
         <Setter Property="Padding" Value="5"/>

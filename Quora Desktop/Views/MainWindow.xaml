@@ -60,7 +60,7 @@
                 </Border>
 
                 <!-- Language Icon -->
-                <RadioButton Tag="Globe" Name="globeButton" Style="{StaticResource LanguageIconStyle}" />
+                <RadioButton Tag="Globe" Name="globeButton" Style="{StaticResource LanguageRadioButtonStyle}" />
 
                 <!-- Ask Question Button -->
                 <Button Style="{StaticResource AddQuestionButtonStyle}">
