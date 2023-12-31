@@ -13,7 +13,7 @@
                 <ControlTemplate TargetType="RadioButton">
                     <Border x:Name="border" BorderThickness="0,0,0,3" Padding="0,0,0,7" BorderBrush="Transparent">
                         <StackPanel Orientation="Horizontal" Margin="10,10,10,0" VerticalAlignment="Center" HorizontalAlignment="Center">
-                            <fa:ImageAwesome Foreground="Gray" Height="20" Icon="{Binding Tag, RelativeSource={RelativeSource TemplatedParent}}" x:Name="icon" VerticalAlignment="Center"/>
+                            <fa:ImageAwesome Style="{StaticResource NavigationRadioButtonIconStyle}" Foreground="Gray" Height="20" Icon="{Binding Tag, RelativeSource={RelativeSource TemplatedParent}}" x:Name="icon" VerticalAlignment="Center"/>
                         </StackPanel>
                     </Border>
                     <ControlTemplate.Triggers>
