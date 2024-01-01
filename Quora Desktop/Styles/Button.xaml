@@ -13,7 +13,7 @@
                 <ControlTemplate TargetType="RadioButton">
                     <Border x:Name="border" BorderThickness="0,0,0,3" Padding="0,0,0,7" BorderBrush="Transparent">
                         <StackPanel Orientation="Horizontal" Margin="10,10,10,0" VerticalAlignment="Center" HorizontalAlignment="Center">
-                            <fa:ImageAwesome Style="{StaticResource NavigationRadioButtonIconStyle}" Foreground="Gray" Height="20" Icon="{Binding Tag, RelativeSource={RelativeSource TemplatedParent}}" x:Name="icon" VerticalAlignment="Center"/>
+                            <fa:ImageAwesome  Foreground="Gray" Height="20" Icon="{Binding Tag, RelativeSource={RelativeSource TemplatedParent}}" x:Name="icon" VerticalAlignment="Center"/>
                         </StackPanel>
                     </Border>
                     <ControlTemplate.Triggers>
@@ -29,7 +29,32 @@
             </Setter.Value>
         </Setter>
     </Style>
-    
+    <Style x:Key="NavigationRadioButtonIconStyle" TargetType="Image">
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+
+                <Trigger.EnterActions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation
+                            Storyboard.TargetProperty="Opacity"
+                            To="0.7" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </Trigger.EnterActions>
+                <Trigger.ExitActions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation
+                            Storyboard.TargetProperty="Opacity"
+                            To="1" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </Trigger.ExitActions>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
     <Style x:Key="TryQuoraButtonStyle" TargetType="Button">
         <Setter Property="Background" Value="White"/>
         <Setter Property="Foreground" Value="Gray"/>
@@ -69,7 +94,7 @@
                 <ControlTemplate TargetType="RadioButton">
                     <Border x:Name="border" BorderThickness="0,0,0,3" Padding="0,0,0,7" BorderBrush="Transparent">
                         <StackPanel Orientation="Horizontal" Margin="10,10,10,0" VerticalAlignment="Center" HorizontalAlignment="Center">
-                            <fa:ImageAwesome Style="{StaticResource LanguageRadioButtonIconStyle}" Foreground="Gray" Height="20" Icon="{Binding Tag, RelativeSource={RelativeSource TemplatedParent}}" x:Name="icon" VerticalAlignment="Center"/>
+                            <fa:ImageAwesome Foreground="Gray" Height="20" Icon="{Binding Tag, RelativeSource={RelativeSource TemplatedParent}}" x:Name="icon" VerticalAlignment="Center"/>
                         </StackPanel>
                     </Border>
                     <ControlTemplate.Triggers>
@@ -80,6 +105,31 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
+    </Style>
+    <Style x:Key="LanguageRadioButtonIconStyle" TargetType="Image">
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+
+                <Trigger.EnterActions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation
+                            Storyboard.TargetProperty="Opacity"
+                            To="0.7" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </Trigger.EnterActions>
+                <Trigger.ExitActions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation
+                            Storyboard.TargetProperty="Opacity"
+                            To="1" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </Trigger.ExitActions>
+            </Trigger>
+        </Style.Triggers>
     </Style>
 
     <Style x:Key="AddQuestionButtonStyle" TargetType="Button">
