@@ -1,7 +1,6 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <Color x:Key="QuoraRed">#B92B27</Color>
-    <Color x:Key="ShadeGray">#F5F5F5</Color>
-    <Color x:Key="DarkGray">Gray</Color>
-
+    <SolidColorBrush x:Key="ShadeGray" Color="#F5F5F5"/>
+    <SolidColorBrush x:Key="DarkGray" Color="Gray"/>
+    <SolidColorBrush x:Key="QuoraRed" Color="#B92B27"/>
 </ResourceDictionary>
