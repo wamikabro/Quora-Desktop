@@ -9,6 +9,6 @@ namespace Quora_Desktop.Model
 {
     public class PageModel
     {
-        public Image UserProfile { get; set; }
+        public int UserID { get; set; }
     }
 }
