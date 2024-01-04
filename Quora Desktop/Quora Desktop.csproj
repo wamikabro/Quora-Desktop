@@ -58,6 +58,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Model\PageModel.cs" />
     <Compile Include="Utilities\Btn.cs" />
     <Compile Include="ViewModel\NotificationsVM.cs" />
     <Compile Include="Views\Notifications.xaml.cs">
@@ -182,5 +183,6 @@
   <ItemGroup>
     <Resource Include="assets\arrow_down_icon.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
