@@ -60,6 +60,7 @@
     </ApplicationDefinition>
     <Compile Include="Model\PageModel.cs" />
     <Compile Include="Utilities\Btn.cs" />
+    <Compile Include="ViewModel\NavigationVM.cs" />
     <Compile Include="ViewModel\NotificationsVM.cs" />
     <Compile Include="Views\Notifications.xaml.cs">
       <DependentUpon>Notifications.xaml</DependentUpon>
