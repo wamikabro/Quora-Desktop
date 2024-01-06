@@ -3,10 +3,14 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Quora_Desktop" 
+        xmlns:vm="clr-namespace:Quora_Desktop.ViewModel"
+        xmlns:Menu="clr-namespace:Quora_Desktop.Utilities"
         xmlns:fa="http://schemas.fontawesome.io/icons/"
         mc:Ignorable="d"
         Title="MainWindow">
+    <Window.DataContext>
+        <vm:NavigationVM/>
+    </Window.DataContext>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="65"/>
@@ -21,7 +25,10 @@
 
             <!-- Navigation Buttons -->
             <StackPanel Margin="10,0,10,0" Orientation="Horizontal" VerticalAlignment="Center">
-                <RadioButton Tag="Home" IsChecked="True" Name="homeButton" Style="{StaticResource NavigationRadioButtonStyle}" />
+                <Menu:Btn Tag="Home" x:Name="homeButton" Style="{StaticResource NavigationRadioButtonStyle}"
+                          Command="{Binding HomeCommand}"
+                          IsChecked="True"/>
+
                 <RadioButton Tag="list" Name="followingButton" Style="{StaticResource NavigationRadioButtonStyle}"/>
                 <RadioButton Tag="book" Name="answerButton" Style="{StaticResource NavigationRadioButtonStyle}"/>
                 <RadioButton Tag="group" Name="spacesButton" Style="{StaticResource NavigationRadioButtonStyle}"/>
